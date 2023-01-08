@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: hsl(225deg, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+}
+
+.background-desktop {
+  display: none;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 545px;
+}
+.container .card-header .woman-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+.container .card-body {
+  padding: 20px;
+}
+.container .card-body .order-and-descrition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card-body .order-and-descrition .order {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 3rem;
+}
+.container .card-body .order-and-descrition .description {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1.5rem;
+  line-height: 25px;
+  text-align: center;
+}
+.container .card-body .plan-container {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: hsl(225deg, 100%, 98%);
+  margin: 30px 0;
+}
+.container .card-body .plan-container .plan-and-price .plan-type {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.container .card-body .plan-container .plan-and-price .price {
+  font-size: 1.5rem;
+  color: hsl(224deg, 23%, 55%);
+}
+.container .card-body .plan-container .change {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .card-body .plan-container .change .change-btn {
+  font-size: 1.5rem;
+  background: none;
+  text-decoration: underline;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+.container .card-body .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card-body .buttons .proceed-btn,
+.container .card-body .buttons .cancel-btn {
+  background: none;
+}
+.container .card-body .buttons .proceed-btn {
+  box-shadow: 0 5px 30px hsl(245deg, 75%, 52%);
+  width: 100%;
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 94%);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.container .card-body .buttons .cancel-btn {
+  margin-top: 20px;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+}
+
+@media (min-width: 992px) {
+  .background-mobile {
+    display: none;
+  }
+  .container .card-body {
+    padding: 30px;
+  }
+  .container .card-body .plan-container .change .change-btn {
+    transition: color 0.3s, -webkit-text-decoration 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
+    transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
+  }
+  .container .card-body .plan-container .change .change-btn:hover {
+    color: rgb(82, 72, 173);
+    text-decoration: none;
+  }
+  .container .card-body .buttons .proceed-btn {
+    transition: background-color 0.3s;
+  }
+  .container .card-body .buttons .proceed-btn:hover {
+    background-color: rgb(82, 72, 173);
+  }
+  .container .card-body .buttons .cancel-btn {
+    transition: color 0.3s;
+  }
+  .container .card-body .buttons .cancel-btn:hover {
+    color: black;
+  }
+}/*# sourceMappingURL=style.css.map */
